@@ -1,0 +1,7 @@
+export const INPUT_CHANGE = 'INPUT_CHANGE';
+export const OUTPUT_VALUE = 'OUTPUT_VALUE';
+export const RADIO_VALUE = 'RADIO_VALUE';
+export const RADIO_CHANGE = 'RADIO_CHANGE';
+export const CONTACT_VALUE = 'CONTACT_VALUE';
+export const CONTACT_CHANGE = 'CONTACT_CHANGE';
+export const ROTATE_COUNT_CHANGE ='ROTATE_COUNT_CHANGE';
