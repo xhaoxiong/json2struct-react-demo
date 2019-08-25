@@ -19,10 +19,10 @@ export default (state = defaultState, action) => {
         newState.outputValue=action.value;
       return newState;
     case actionTypes.RADIO_CHANGE:
-        newState.radioValue=!action.value;
+        newState.radioValue=action.value;
         return newState;
     case actionTypes.CONTACT_CHANGE:
-        newState.contactValue=action.value;
+        newState.contactValue=!action.value;
         return newState;
     case actionTypes.ROTATE_COUNT_CHANGE:
         newState.rotateCount=action.value;
