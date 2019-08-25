@@ -3,7 +3,7 @@ module.exports = function(app) { 
   app.use(   
     proxy('/api',
       {     
-        target: 'http://www.baidu.com',
+        target: 'https://json2struct.xhxbl',
         changeOrigin: true   
       }
 ))
