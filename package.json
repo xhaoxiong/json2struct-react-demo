@@ -90,7 +90,7 @@
       "last 1 safari version"
     ]
   },
-
+  "proxy":"https://json2struct.xhxblog.cn",
   "jest": {
     "roots": [
       "<rootDir>/src"

@@ -65,7 +65,7 @@ class Json2Go extends Component {
           <button onClick={ () => convertHandle(inputValue,radioValue,contactValue)}>转!</button>
           <div className="rotate-count">成功转换了{rotateCount}次</div>
           <footer>
-            © 2019 xhaoxiong<br/>这是通过<a href="https://github.com/ChimeraCoder/gojson">gojson接入</a> 模仿<a href="https://mholt.github.io/json-to-go/">该网站</a>用react与golang接口实现了一遍.
+            © 2019 xhaoxiong<br/>这是通过<a href="https://github.com/ChimeraCoder/gojson">gojson接入</a> 模仿<a href="https://mholt.github.io/json-to-go/">该网站</a>用<a href="https://github.com/xhaoxiong/json2struct-react-demo">react</a>与<a href="https://github.com/xhaoxiong/json2struct">golang</a>接口实现了一遍.该项目非常适合新手入门react和golang的朋友学习.
           </footer>
       </div>
       )}
