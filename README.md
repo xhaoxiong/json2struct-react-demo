@@ -7,6 +7,8 @@
 
 该项目运行：先克隆到本地
 然后 npm install
-【然后修改package.json中的"proxy":"https://json2struct.xhxblog.cn", 或者你去src/store/actionCreators.js的axios请求api修改成本地的】->没有修改没有关系，后端api在服务端（https://json2struct.xhxblog.cn）已经开启
+【然后修改package.json中的"proxy":"https://json2struct.xhxblog.cn", 
+或者你去src/store/actionCreators.js的axios请求api修改成本地的】
+->没有修改没有关系，后端api在服务端（https://json2struct.xhxblog.cn）已经开启
 最后 npm start
 ```
