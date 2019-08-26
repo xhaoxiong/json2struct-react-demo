@@ -1,4 +1,5 @@
 import * as actionTypes from './actionTypes';
+import http from '../http/server'
 import axios from 'axios';
 class actionCreators {}
 
@@ -28,30 +29,17 @@ export const rotateCount =(value) =>({
 
 
 export const getRotateCount = ()=>{
-  return (dispatch) =>{
-    axios.get("/api/rotate/count").then((res) => {
-      let data=res.data
-      dispatch(rotateCount(data.data));
-    }).catch((err) =>{
-    })
+  return async (dispatch) =>{
+    const res= await http.get("/api/rotate/count");
+    dispatch(rotateCount(res.data.data));
   }
 }
 
 export const getJsonInfo = (inputValue,radioValue,contactValue) => {
-  return (dispatch) =>{
-    axios({
-          url:'/api/rotate',
-          method: 'post',
-          data: {input_val:inputValue,cate:radioValue,contact:contactValue},
-          headers:{
-            'Content-Type':'application/x-www-form-urlencoded'
-          }
-    }).then((res) => {
-      let data=res.data
-      dispatch(outputValue(data.data));
-      dispatch(getRotateCount())
-    }).catch((err) =>{
-    })
+  return async (dispatch) =>{
+    const res = await http.postForm("/api/rotate",{input_val:inputValue,cate:radioValue,contact:contactValue});
+    dispatch(outputValue(res.data.data));
+    dispatch(getRotateCount());
   }
 }
 
